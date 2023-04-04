@@ -27,7 +27,9 @@
           >
           <ul class="header__navigation-list list">
             <li class="header__navigation-item">
-              <a class="header__navigation-link link" href="./index.html"
+              <a
+                class="header__navigation-links menu-link link"
+                href="./index.html"
                 >Studio</a
               >
             </li>
@@ -46,13 +48,15 @@
           <ul class="header__address-list list">
             <li class="header__address-item">
               <a
-                class="header__adress-link link"
+                class="header__adress-link link address-link"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li class="header__address-item">
-              <a class="header__adress-link link" href="tel:+11(000)111-11-11"
+              <a
+                class="header__adress-link link address-link"
+                href="tel:+11(000)111-11-11"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -66,14 +70,29 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero__button" type="button">Order Service</button>
+          <button data-modal-open class="hero__button" type="button">
+            Order Service
+          </button>
+        </div>
+
+        <!----------------- MODAL ---------------->
+        <div data-modal class="backdrop is-hidden">
+          <div class="modal">
+            <button class="button-modal" data-modal-close>
+              <svg class="svg-modal" width="8" height="8">
+                <use
+                  href="./images/svg/closeicons/close-black.svg#icon-close-black"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!---------- PRIVILAGE SECTION ---------->
       <section class="section section__privilage">
         <div class="container">
-          <h2 class="visually-hidden">our privilage</h2>
+          <h2 hidden class="visually-hidden">our privilage</h2>
           <ul class="privilage__list list">
             <li class="privilage__item icon1">
               <h3 class="privilage__title">Strategy</h3>
@@ -555,5 +574,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
