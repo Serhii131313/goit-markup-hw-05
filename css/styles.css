@@ -396,10 +396,6 @@ address {
 .privilage__item {
   width: calc((100% - 3 * 24px) / 4);
 }
-.privilage__item:not(:last-child) {
-  margin-right: 24px;
-  min-width: 264px;
-}
 
 .privilage__item::before {
   content: '';
