@@ -136,8 +136,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__navigation-link:hover,
@@ -362,7 +361,8 @@ address {
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .button-modal:hover {
   fill: var(--bg-color);
@@ -510,9 +510,8 @@ address {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: var(--logo-color-top);
 }
 .link_team:hover,
@@ -590,6 +589,8 @@ address {
 
   border: 1px solid var(--border-company-color);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -677,6 +678,7 @@ address {
 
 .portfolio__section-link {
   display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__section-link:hover,
 .portfolio__section-link:focus {
@@ -711,6 +713,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--seconari-text-color);
 }
+
 /*#region --OVERLAY-- */
 .blok {
   position: relative;
@@ -741,8 +744,8 @@ address {
   letter-spacing: 0.02em;
   color: var(--bg-color-fon-team);
 }
-
 /*#endregion --OWERLAY-- */
+
 /*#endregion --PORTFOLIO PAGE-- */
 
 /*#region --FOOTER SECTION-- */
@@ -812,6 +815,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   color: var(--logo-footer-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .footer-links {
         } */
